@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+
+.container{
+    direction: rtl;
+}
+
+table{
+    thead{
+        background-color: $accentColor;
+        color: $whiteColor;
+
+        th:first-child{
+               padding-left: 2.5rem;
+        }
+    }
+
+    th, td {
+        padding: 1rem 0.8rem;
+    }
+
+    
+   
+}
+

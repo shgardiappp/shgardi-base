@@ -1,0 +1,93 @@
+<div *ngIf="orderType == 'cash' " class="container my-5">
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">وظيفة</th>
+            <th scope="col">الحالة</th>
+            <th scope="col">التصرف</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of cashData">
+                <td>{{ data.role}}</td>
+                <td>{{ data.case }}</td>
+                <td>
+                    {{ data.action}}
+                </td>
+            </tr>
+         
+        </tbody>
+      </table>
+</div>
+
+
+<div *ngIf="orderType == 'cancelled' " class="container my-5">
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">وظيفة</th>
+            <th scope="col">الحالة</th>
+            <th scope="col">التصرف</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of cancelledData">
+                <td>{{ data.role}}</td>
+                <td>{{ data.case }}</td>
+                <td>
+                    {{ data.action}}
+                </td>
+            </tr>
+         
+        </tbody>
+      </table>
+</div>
+
+<div *ngIf="orderType == 'completed' " class="container my-5">
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">وظيفة</th>
+            <th scope="col">الحالة</th>
+            <th scope="col">التصرف</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of completedData">
+                <td>{{ data.role}}</td>
+                <td>{{ data.case }}</td>
+                <td>
+                    {{ data.action}}
+                </td>
+            </tr>
+         
+        </tbody>
+      </table>
+</div>
+
+
+<div *ngIf="orderType == 'courier' " class="container my-5">
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">وظيفة</th>
+            <th scope="col">الحالة</th>
+            <th scope="col">التصرف</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of courierData">
+                <td>{{ data.role}}</td>
+                <td>{{ data.case }}</td>
+                <td>
+                    {{ data.action}}
+                </td>
+            </tr>
+         
+        </tbody>
+      </table>
+</div>

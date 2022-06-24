@@ -1,0 +1,21 @@
+.error-container {
+    margin: 11rem 0;
+}
+.error-template{
+    h2{
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 0 0.7rem;
+            background-image: url("../../../assets/sad.svg");
+            background-size: cover;
+        }
+    }
+    
+ 
+}

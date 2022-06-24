@@ -1,0 +1,65 @@
+<app-loadingspinner [showSpinner]="isLoading"></app-loadingspinner>
+
+
+<div class="container my-5">
+  
+  <h2 class="my-2">عميل</h2>
+
+
+   <p class="description my-5">سيتم ارسال رقمك الي قسم ارضاء العملاء و سيتم التواصل معك في اسرع وقت ممكن </p>
+</div>
+
+
+<div class="container my-5">
+
+  <h2 class="my-2">مندوب</h2>
+
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">الحالة</th>
+            <th scope="col">التصرف</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of delegateData">
+                <td>{{ data.case }}</td>
+                <td>
+                  <span [style]="data.action == 'YES' ? 'color:green' : 'color:red'">
+                    {{ data.action}}
+                  </span>
+                </td>
+            </tr>
+         
+        </tbody>
+      </table>
+</div>
+
+
+<div class="container my-5">
+
+  <h2 class="my-2">مطعم</h2>
+
+
+    <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">الحالة</th>
+            <th scope="col">التصرف</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of restaurantData">
+                <td>{{ data.case }}</td>
+                <td>
+                  <span [style]="data.action == 'YES' ? 'color:green' : 'color:red'">
+                    {{ data.action}}
+                  </span>
+                </td>
+            </tr>
+         
+        </tbody>
+      </table>
+</div>

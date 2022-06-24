@@ -1,0 +1,32 @@
+<app-loadingspinner [showSpinner]="isLoading"></app-loadingspinner>
+
+
+<div class="container text-center">
+    <div class="row">
+
+
+        <div class="col-md-4 item animate__animated animate__backInLeft">
+           <a [routerLink]='["/food" , "cash"]'>
+            <img src="assets/icons/money.svg" alt="">
+            <h3>Change in cash</h3>
+           </a>
+        </div>
+
+
+        <div class="col-md-4 item  animate__animated animate__backInDown">
+            <a [routerLink]='["/food" , "cancelled"]'>
+                <img src="assets/icons/cancel.svg" alt="">
+            <h3>Cancelled</h3>
+            </a>
+        </div>
+
+
+        <div class="col-md-4 item animate__animated animate__backInRight">
+           <a [routerLink]='["/food" , "courier"]'>
+            <img src="assets/icons/courier.svg" alt="">
+            <h3>Couriers Replace</h3>
+           </a>
+        </div>
+    </div>
+</div>
+

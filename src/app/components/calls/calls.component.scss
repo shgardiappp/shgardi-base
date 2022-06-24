@@ -1,0 +1,28 @@
+@import '../../../styles.scss';
+
+.container{
+    direction: rtl;
+    margin: 8rem auto;
+}
+
+
+
+
+
+ol{
+    padding-right: 1rem !important;
+    padding-bottom: 2rem;
+    list-style: arabic-indic;
+    border-bottom: 1px solid #212221;
+
+
+    li{
+        margin: 1.8rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+
+.accent-color{
+    color: $accentColor;
+}

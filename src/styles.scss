@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+
+@import '~animate.css/animate.min';
+
+$bgColor: #fff;
+$accentColor:#faaf3b;
+$hoverColor:rgb(102, 102, 102);
+$fontColor:#000;
+$errorColor: #d50000;
+$welcomeColor:#00c853;
+$whiteColor:#fff;
+$navLinkColor:#212121;
+
+body {
+    background-color: $bgColor;
+    font-family: "Montserrat Alternates";
+    color: $fontColor;
+}
+
+
+
+a {
+    color: $fontColor;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.active-link,
+a:hover {
+    color: $hoverColor;
+}
+
+
+.error {
+    color: $errorColor;
+}
+
+.welcome-message-container{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: $welcomeColor;
+    color: $fontColor;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.error-message-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: $errorColor;
+    color: $whiteColor;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn{
+    background-color: $accentColor !important;
+    color: $whiteColor !important;
+    outline: none;
+}
+
+.form-group{
+    margin: 1.25rem 0;
+}
+
+input.ng-dirty.ng-invalid {
+    border: 2px solid #f00;
+}
+
+table{
+    thead{
+        background-color: $accentColor;
+        color: $whiteColor;
+
+        th:first-child{
+               padding-left: 2.5rem;
+        }
+    }
+
+    th, td {
+        padding: 1rem 0.8rem;
+    }
+
+    
+   
+}
+.description{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #212221;
+}

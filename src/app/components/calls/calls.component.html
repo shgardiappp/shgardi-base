@@ -1,0 +1,120 @@
+<div class="container my-5">
+    <p class="description">
+        الرد الترحيبي: مرحبا معك .......... من الدعم الفني لتطبيق شقردي، كيف اقدر اخدمك.<br> <br>
+
+
+        قبل الانهاء حياك الله في حاجة ثانية اقدر اخدمك فيها؟ <br> <br>
+
+
+        الانهاء: شكرا لك شرفتنا، سعدنا بخدمتك.
+
+    </p>
+
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">لا تستخدم</th>
+                <th scope="col">استخدم</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of callTableData">
+                <td>
+                    <div class="d-flex justify-content-between">
+                        <span>{{ data.notUse }}</span>
+                        <span><i class="fas fa-times-circle text-danger"></i></span>
+                    </div>
+
+                </td>
+
+                <td>
+
+                    <div class="d-flex justify-content-between">
+                        <span>{{ data.use }}</span>
+                        <span><i class="fas fa-check-circle text-success"></i></span>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h3 class="my-5 fw-bolder accent-color">
+        <span>ملاحظات</span>
+        <span><i class="fas fa-sticky-note text-dark mx-4"></i></span>
+    </h3>
+
+
+    <ol>
+        <li *ngFor="let item of callsNotesList">
+            {{ item }}
+        </li>
+    </ol>
+
+    <h3 class="my-5 fw-bolder accent-color">
+        هناك بعض الخطوات للتعامل مع عميل غاضب
+    </h3>
+
+    <ol>
+        <li *ngFor="let item of angryCustomerNotes">
+            {{ item }}
+        </li>
+    </ol>
+
+
+
+    <h3 class="my-5 fw-bolder accent-color">
+        كلمات سعودي تساعد في تهدائه غضب العميل وتساعد علي انهاء المكالمه؟
+    </h3>
+
+    <ol>
+        <li *ngFor="let item of saudiAngruCustomerWords">
+            {{ item }}
+        </li>
+    </ol>
+
+
+
+    <h3 class="my-5 fw-bolder">
+        كيفيه الرد علي بعض الكلمات السعودي
+    </h3>
+
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th scope="col">الكلمة</th>
+                <th scope="col">الرد</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let data of saudiWordsTableData">
+                <td>
+                    {{ data.word }}
+
+                </td>
+
+                <td>
+                    {{ data.reply }}
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <h3 class="my-5 fw-bolder accent-color">
+        في حاله وجود عميل اجنبي
+    </h3>
+
+
+    <p class="description border-bottom-0">
+        اذا كنت لا تستطيع تكلم الانجليزيه يتم التوضيح نه يتم تحويل المكالمه الي متحدث الانجليزيه
+        ونقول <br> <br>
+        <q>Thank you for calling ,you will be referred to an English speaker</q>
+    </p>
+
+</div>
